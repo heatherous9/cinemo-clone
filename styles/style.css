@@ -2,13 +2,21 @@
   display: flex;
   align-items: center;
   gap: 56px;
+  margin-left: 64px;
 }
 
 .main-list ul {
   display: flex;
   align-items: center;
+  font-size: 14px;
   gap: 32px;
   list-style: none;
+}
+
+.main-mypage {
+  margin-right: 64px;
+  margin-left: auto;
+  font-size: 14px;
 }
 
 .main-mypage a {
@@ -16,9 +24,34 @@
   align-items: center;
 }
 
+.mypageimg {
+  width: 32px;
+  border-radius: 8px;
+}
+
+.pageimg {
+  position: relative;
+}
+.mypageimg + p {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 15.36px;
+}
+.yolotext {
+  margin-left: 10px;
+}
+
 .footer-list ul {
   display: flex;
   align-items: center;
   gap: 32px;
+  margin-left: 64px;
   list-style: none;
+}
+.footer-text {
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
 }
