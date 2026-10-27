@@ -7,6 +7,35 @@
   margin: auto 0;
   padding: 116px;
 }
+.title {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 11px;
+  leading-trim: NONE;
+
+  color: #f28d77;
+}
+.intro {
+  font-family: Noto Sans KR;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 40px;
+}
+.description {
+  font-family: Noto Sans KR;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 15px;
+  leading-trim: NONE;
+  line-height: 170%;
+  letter-spacing: 0%;
+}
+.profile-area {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
 .profile-intro h2 {
   font-size: 10px;
   margin-bottom: 12px;
@@ -42,6 +71,37 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+.my-profile-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.my-profile-avatar {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.my-profile-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.my-profile-initial {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 2;
+  color: #f3f1ed;
 }
 .profile-avatar .profile-image {
   display: block;
@@ -84,7 +144,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; /* 아이콘과 텍스트 사이 간격 */
+  gap: 8px;
   padding: 0 16px;
   border-radius: 4px;
   cursor: pointer;
