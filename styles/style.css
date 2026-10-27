@@ -172,9 +172,10 @@ body {
 
 .collections .collection-item {
   display: flex;
-  flex-direction: column;
-  width: 310px;
-  flex-shrink: 0;
+  align-items: center;
+  margin-left: 64px;
+  font-size: 10px;
+  font-family: inter;
 }
 
 .collections .collection-item img {
