@@ -1,11 +1,353 @@
+body {
+  background-color: #101113;
+  color: #f3f1ed;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  margin-left: 64px;
+}
+.header-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+.main-list ul {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #acaeb3;
+  font-family: Noto Sans KR;
+}
+.nav-list {
+  color: inherit;
+  text-decoration: none;
+}
+.main-list li:first-child a {
+  color: #f3f1ed;
+}
+.main-list a {
+  color: inherit;
+  text-decoration: none;
+}
+.main-list a:hover {
+  color: #f3f1ed;
+  text-decoration: none;
+}
+.mypages {
+  list-style: none;
+  color: #f3f1ed;
+  font-family: Noto Sans KR;
+  font-size: 14px;
+}
+.main-mypage a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.main-mypage a:hover {
+  text-decoration: none;
+}
+.mypageimg {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+}
+.pageimg {
+  position: relative;
+  width: 32px;
+  height: 32px;
+}
+.mypageimg + p {
+  font-size: 15.36px;
+  font-family: Noto Sans KR;
+  color: #f3f1ed;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#footer {
+  font-family: Noto Sans KR;
+  color: #acaeb3;
+}
+.footer-list ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-left: 64px;
+  list-style: none;
+  padding: 0;
+  font-size: 12px;
+}
+.footer-text {
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
+  font-size: 11px;
+}
+.footer-project {
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
+  font-size: 10px;
+  font-family: inter;
+}
+
+body {
+  background-color: #101113;
+}
+
+.account-settings {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.collections {
+  width: 100%;
+  padding: 16px 0 64px;
+  background-color: #101113;
+  color: #f3f1ed;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.account-settings h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.settings-group {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #303237;
+}
+
+.settings-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  padding: 24px 0;
+  border-bottom: 1px solid #303237;
+}
+
+.account-setting-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+}
+
+.account-setting-row p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.account-setting-row p:first-child {
+  width: 180px;
+  height: 17px;
+  color: #acaeb3;
+}
+
+.account-setting-row p:nth-child(2) {
+  flex: 1;
+  height: 17px;
+  color: #f3f1ed;
+}
+
+.settings-list a {
+  padding: 0;
+  width: 24px;
+  height: 16px;
+  font-size: 13px;
+  color: #f28d77;
+  text-decoration: none;
+}
+
+.session-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.session-actions p {
+  margin: 0;
+  font-weight: 400;
+  color: #7e8289;
+  font-size: 11px;
+}
+
+.session-actions a {
+  padding: 0;
+  color: #acaeb3;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.settings-list a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.session-actions a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.collections .collection-group + .collection-group {
+  margin-top: 48px;
+}
+
+.collections .collection-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 64px;
+  margin-bottom: 20px;
+}
+
+.collections .collection-heading h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #f3f1ed;
+}
+
+.collections .collection-heading p {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: #acaeb3;
+}
+
+.collections .collection-heading span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: #7e8289;
+}
+
+.collections .collection-list {
+  display: flex;
+  gap: 24px;
+  padding: 0 64px;
+  overflow-x: auto;
+  list-style: none;
+  scrollbar-width: none;
+}
+
+.collections .collection-item {
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
+  font-size: 10px;
+  font-family: inter;
+}
+
+.collections .collection-item img {
+  display: block;
+  width: 310px;
+  height: 174px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  transition: opacity 0.3s;
+}
+
+.collections .collection-item h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #f3f1ed;
+  margin-bottom: 4px;
+}
+
+.collections .collection-item p {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+  color: #acaeb3;
+}
+
+.collections .collection-item h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #f3f1ed;
+  margin-bottom: 4px;
+}
+
+.collections .collection-item p {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+  color: #acaeb3;
+}
+
+.collections .collection-item:hover > img {
+  opacity: 0.5;
+}
+
+@media (max-width: 1023px) {
+}
+
+@media (max-width: 767px) {
+  .collections {
+    padding: 8px 0 40px;
+  }
+
+  .collections .collection-group + .collection-group {
+    margin-top: 36px;
+  }
+
+  .collections .collection-heading {
+    padding: 0 24px;
+    margin-bottom: 8px;
+  }
+
+  .collections .collection-heading p {
+    margin-top: 8px;
+  }
+
+  .collections .collection-list {
+    padding: 0 24px;
+  }
+
+  .collections .collection-item {
+    width: 240px;
+  }
+
+  .collections .collection-item img {
+    width: 240px;
+    height: 135px;
+  }
+}
+body {
+  background-color: #101113;
+  color: #f3f1ed;
+}
+
 .profile-intro {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin: auto 0;
-  padding: 116px;
+  gap: 56px;
+  margin-left: 64px;
 }
 .title {
   font-family: Inter;
@@ -36,6 +378,7 @@
   flex-direction: column;
   gap: 4px;
 }
+
 .profile-intro h2 {
   font-size: 10px;
   margin-bottom: 12px;
@@ -62,8 +405,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6px;
+  font-size: 14px;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #acaeb3;
+  font-family: Noto Sans KR;
 }
+
 .profile-avatar {
   position: relative;
 }
@@ -120,12 +470,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 28px;
-  font-weight: bold;
+  gap: 10px;
+  text-decoration: none;
 }
+
 .bt-profile-setting {
   display: block;
   margin-left: auto;

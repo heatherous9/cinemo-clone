@@ -7,10 +7,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cinemo - My Page</title>
-    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <a href="/index.html" class="logo">
+        <img src="./assets/nerflex-identity.svg" alt="사이트로고" />
+      </a>
+      <div class="header-head">
+        <span>
+          <nav class="main-list">
+            <ul>
+              <li><a href="#">홈</a></li>
+              <li><a href="#">영화</a></li>
+              <li><a href="#">시리즈</a></li>
+              <li><a href="#">내가 찜한 콘텐츠</a></li>
+            </ul>
+          </nav>
+        </span>
+        <span>
+          <nav class="main-mypage">
+            <a href="/mypage.html" class="mypages">
+              <div class="pageimg">
+                <img src="./assets/avatar.png" alt="" class="mypageimg" />
+                <p>Y</p>
+              </div>
+              <p>욜로의 마이페이지</p>
+            </a>
+          </nav>
+        </span>
+      </div>
+    </header>
     <main>
       <section class="my-cinemo">
         <h2 class="title">my cinemo</h2>
@@ -39,46 +65,62 @@
       <section class="account-settings">
         <h2>계정 설정</h2>
 
-        <div class="settings-group">
-          <div class="settings-list">
-            <div class="account-setting-row">
-              <p>이메일</p>
-              <p>yolo202617@example.com</p>
-            </div>
-            <button>변경</button>
+        <div class="settings-list">
+          <div class="account-setting-row">
+            <p>이메일</p>
+            <p>yolo202617@example.com</p>
           </div>
+          <button>변경</button>
+        </div>
 
-          <div class="settings-list">
-            <div class="account-setting-row">
-              <p>비밀번호</p>
-              <p>••••••••••••</p>
-            </div>
-            <button>변경</button>
+        <div class="settings-list">
+          <div class="account-setting-row">
+            <p>비밀번호</p>
+            <p>••••••••••••</p>
           </div>
+          <button>변경</button>
+        </div>
 
-          <div class="settings-list">
-            <div class="account-setting-row">
-              <p>멤버십</p>
-              <p>베이식 · 월 9,500원</p>
-            </div>
-            <button>관리</button>
+        <div class="settings-list">
+          <div class="account-setting-row">
+            <p>멤버십</p>
+            <p>베이식 · 월 9,500원</p>
           </div>
+          <button>관리</button>
+        </div>
 
-          <div class="settings-list">
-            <div class="account-setting-row">
-              <p>표시 언어</p>
-              <p>한국어</p>
-            </div>
-            <button>변경</button>
+        <div class="settings-list">
+          <div class="account-setting-row">
+            <p>표시 언어</p>
+            <p>한국어</p>
           </div>
+          <button>변경</button>
         </div>
 
         <div class="session-actions">
           <p>내 계정으로 접속 중입니다.</p>
-          <button>로그아웃</button>
+          <a href="index.html">로그아웃</a>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+      <nav class="footer-list">
+        <ul>
+          <li>서비스 소개</li>
+          <li>이용약관</li>
+          <li>개인정보 처리방침</li>
+          <li>고객센터</li>
+        </ul>
+      </nav>
+      <div class="footer-text">
+        <p>
+          CINEMO는 학습을 위한 가상의 OTT 서비스 입니다. 콘텐츠와 인물은 모두
+          허구이며 실제 결제·재생은 제공하지 않습니다.
+        </p>
+      </div>
+      <div class="footer-project">
+        <p>© 2026 CINEMO. A FICTIONAL STREAMING PROJECT.</p>
+      </div>
+    </footer>
   </body>
 </html>
