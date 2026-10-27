@@ -49,9 +49,18 @@
   gap: 32px;
   margin-left: 64px;
   list-style: none;
+  padding: 0;
+  font-size: 12px;
 }
 .footer-text {
   display: flex;
   align-items: center;
   margin-left: 64px;
+  font-size: 11px;
+}
+.footer-project {
+  display: flex;
+  align-items: center;
+  margin-left: 64px;
+  font-size: 10px;
 }
