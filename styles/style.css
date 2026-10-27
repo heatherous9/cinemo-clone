@@ -4,6 +4,11 @@ body {
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  margin-left: 64px;
+}
 .profile-intro {
   text-align: center;
   display: flex;
@@ -19,9 +24,15 @@ body {
   width: 80%;
 }
 .main-list ul {
-  justify-content: center;
-  margin: auto 0;
-  padding: 116px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  gap: 32px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #acaeb3;
+  font-family: Noto Sans KR;
 }
 .profile-intro h2 {
   font-size: 10px;
@@ -72,8 +83,15 @@ body {
 .main-list a:hover {
   color: #f3f1ed;
   text-decoration: none;
-  gap: 6px;
 }
+
+.mypages {
+  list-style: none;
+  color: #f3f1ed;
+  font-family: Noto Sans KR;
+  font-size: 14px;
+}
+
 .profile-avatar {
   position: relative;
 }
@@ -98,6 +116,12 @@ body {
 .avartar-initial {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+.main-mypage a {
+  display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
@@ -149,22 +173,15 @@ body {
   align-items: center;
   margin-left: 64px;
   font-size: 10px;
-  font-family: inter;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 28px;
-  font-weight: bold;
+  fnt-family: inter;
 }
+
 .bt-profile-setting {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-body {
-  background-color: #101113;
-  color: #f3f1ed;
-}
+
 .bt-profile-setting {
   background-color: transparent;
   border: 1px solid #f3f1ed;
@@ -175,47 +192,6 @@ body {
   align-items: center;
   gap: 56px;
   margin-left: 64px;
-}
-
-.main-list ul {
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-  gap: 32px;
-  list-style: none;
-}
-
-.main-mypage {
-  margin-right: 64px;
-}
-
-.main-mypage a {
-  display: flex;
-  align-items: center;
-}
-
-.mypageimg {
-  width: 32px;
-  border-radius: 8px;
-}
-
-.yolotext {
-  font-size: 14px;
-}
-
-.footer-list ul {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-  list-style: none;
-  justify-content: center;
-  gap: 8px; /* 아이콘과 텍스트 사이 간격 */
-  padding: 0 16px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: "Noto Sans KR", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
 }
 
 .bt-icon {
