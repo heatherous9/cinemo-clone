@@ -84,6 +84,19 @@ body {
   margin-bottom: 40px;
   color: #acaeb3;
 }
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+.footer-list a:hover {
+  color: #f3f1ed;
+  text-decoration: none;
+}
+.footer-list a {
+  color: inherit;
+  text-decoration: none;
+}
 .profile-footer {
   font-family: Noto Sans KR;
   color: #acaeb3;
