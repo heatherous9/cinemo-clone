@@ -2,12 +2,6 @@
   --max-width: 1314px;
 }
 
-body {
-  background-color: #101113;
-  color: #f3f1ed;
-  font-family: "Noto Sans KR", sans-serif;
-}
-/* 헤더푸터 CSS시작 */
 .header {
   padding: 0 24px;
 }
@@ -110,7 +104,7 @@ body {
   justify-content: center;
   width: 100%;
   font-family: "Noto Sans KR", sans-serif;
-  padding: 40px 24px;
+  padding-bottom: 75px;
   color: #7e8289;
 }
 .footer-text {
@@ -596,7 +590,9 @@ body {
   text-align: center;
   width: 100%;
   max-width: 1314px;
-  margin-bottom: 40px;
+  min-height: 710x;
+  justify-content: center;
+  height: calc(100vh - 230px);
 }
 .profile-eyebrow {
   font-size: 10px;
