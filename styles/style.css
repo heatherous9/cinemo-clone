@@ -154,8 +154,6 @@ body {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-  .header {
-  }
   .header-head {
     width: 100%;
   }
@@ -536,15 +534,18 @@ body {
 }
 .profile-card {
   position: relative;
-  width: 160px;
-  height: 160px;
-  border-radius: 16px;
-  overflow: hidden;
+  width: 152px;
+  height: 152px;
+  border-radius: 8px;
+  background: #7b8c75;
+  isolation: isolate;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 16px;
+  padding: 0px;
 }
+
 .profile-initial {
   position: absolute;
   top: 50%;
@@ -554,6 +555,7 @@ body {
   font-weight: 500;
   color: #f3f1ed;
   z-index: 1;
+  font-family: "Inter", sans-serif;
 }
 
 .profile-name {
@@ -569,12 +571,15 @@ body {
   margin-top: 4px;
 }
 .profile-link {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-decoration: none;
-  text-decoration: none;
   cursor: pointer;
+}
+.profile-link:hover {
+  transform: translateY(-6px);
 }
 .profile-link > div:last-child {
   display: flex;
@@ -582,12 +587,81 @@ body {
   align-items: center;
   gap: 4px;
 }
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  max-width: 1314px;
+  margin-bottom: 40px;
+}
+.profile-eyebrow {
+  font-size: 10px;
+  font-weight: 400;
+  color: #f28d77;
+  text-transform: uppercase;
+  line-height: 12px;
+
+  width: 92px;
+  height: 12px;
+}
+.profile-container .profile-eyebrow {
+  margin: 0 0 12px 0;
+  color: #f28d77;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
 .profile-list {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 40px;
+  margin: 0 0 40px 0;
   justify-items: center;
+}
+.profile-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #f3f1ed;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+
+  width: 100%;
+  max-width: 1312px;
+  height: 48px;
+}
+.profile-container .profile-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+  color: #f3f1ed;
+}
+.profile-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  margin-top: 8px;
+}
+.profile-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #acaeb3;
+  line-height: 170%;
+
+  width: 100%;
+  max-width: 1312px;
+  height: 27px;
+}
+.profile-container > .profile-description {
+  font-size: 14px;
+  color: #acaeb3;
+  margin: 0 0 40px 0;
 }
 .profile-list li {
   display: flex;
@@ -596,6 +670,7 @@ body {
   font-size: 14px;
   gap: 32px;
   list-style: none;
+
   padding: 0;
   margin: 0;
   color: #acaeb3;
@@ -774,26 +849,40 @@ body {
   object-fit: contain;
 }
 .bt-manage {
+  box-sizing: border-box;
   display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  gap: 8px;
-  padding: 10px 24px;
 
+  gap: 8px;
+  padding: 0 22px;
+
+  width: 138px;
+  height: 48px;
   border: 1px solid #303237;
-  background-color: #101113;
-  border-radius: 8px;
+  background-color: #1a1c1f;
+  border-radius: 4px;
 
   color: #f3f1ed;
   text-decoration: none;
   font-size: 14px;
-  font-weight: 500;
-
-  transition: all 0.2s ease;
+  transition:
+    background-color 0.2s border-color 0.2s,
+    color 0.2s;
+  white-space: nowrap;
 }
 
 .btn-manage:hover {
   background-color: #1a1c1f;
   border-color: #acaeb3;
+}
+.btn-manage span {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f3f1ed;
 }
 .font-inter {
   font-family: "Inter", sans-serif;
