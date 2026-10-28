@@ -590,11 +590,22 @@ body {
   font-weight: 400;
   text-transform: uppercase;
 }
+.my-cinemo .my-intro {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
 .my-profile-box {
+  background-color: #303237
+  border-radius: 12px;
+  padding: 32px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  justify-content: space-between;
+  margin-bottom: 64px;
 }
+
 .my-profile-avatar {
   position: relative;
   width: 80px;
@@ -640,6 +651,13 @@ body {
   align-items: center;
   gap: 10px;
   text-decoration: none;
+}
+.my-profile-box .profile-area {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+  margin-left: 20px;
 }
 
 .bt-profile-setting {
