@@ -8,17 +8,23 @@ body {
 }
 
 .header {
+  padding: 0 24px;
+}
+.header-inner-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  width: 100%;
+  margin: 0 auto;
   gap: 56px;
-  margin-left: 64px;
-  grid-template-columns: 1fr;
+  height: 88px;
 }
 .header-head {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 80%;
+  width: 100%;
+  gap: 56px;
 }
 .main-list ul {
   display: flex;
@@ -71,6 +77,7 @@ body {
   position: relative;
   width: 32px;
   height: 32px;
+  flex-shrink: 0;
 }
 .mypageimg + p {
   font-size: 15.36px;
@@ -80,6 +87,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.mypages p {
+  flex-shrink: 0;
 }
 
 #footer {
