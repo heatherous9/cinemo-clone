@@ -609,7 +609,7 @@ body {
   line-height: 1.2;
 }
 .my-profile-box {
-  background-color: #303237
+  background-color: #303237;
   border-radius: 12px;
   padding: 32px;
   display: flex;
@@ -703,4 +703,26 @@ body {
   width: 16px;
   height: 16px;
   object-fit: contain;
+}
+.bt-manage {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+
+  border: 1px solid #303237;
+  background-color: #101113;
+  border-radius: 8px;
+
+  color: #f3f1ed;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: all 0.2s ease;
+}
+
+.btn-manage:hover {
+  background-color: #1a1c1f;
+  border-color: #acaeb3;
 }
