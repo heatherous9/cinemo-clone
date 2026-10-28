@@ -44,26 +44,78 @@
         <h2 class="title">my cinemo</h2>
         <h3 class="intro">마이페이지</h3>
         <p class="description">취향을 모으고, 나만의 시간을 이어가세요.</p>
-        <div class="my-profile-box">
-          <div class="my-profile-avatar">
-            <img
-              src="./styles/Avatar-YOLO.png"
-              alt="서연 프로필"
-              class="my-profile-image"
-            />
-            <span class="my-profile-initial">Y</span>
-          </div>
-          <div class="profile-area">
-            <span>욜로</span>
-            <span>기본 프로필</span>
-            <p>나만의 영화 노트</p>
-            <p>2026년 10월부터 함께하는 중</p>
-          </div>
-          <a href="profile.html" >>
-            <img  src="./styles/users-mypage-profile-change-icon.svg"/>
-            <span>프로필 변경</span>
-          </a>
-        
+      </section>
+      <section class="my-profile-box">
+        <div class="my-profile-avatar">
+          <img
+            src="./styles/Avatar-YOLO.png"
+            alt="서연 프로필"
+            class="my-profile-image"
+          />
+          <span class="my-profile-initial">Y</span>
+        </div>
+
+        <div class="profile-area">
+          <span>욜로</span>
+          <span>기본 프로필</span>
+          <p>나만의 영화 노트</p>
+          <p>2026년 10월부터 함께하는 중</p>
+        </div>
+        <a href="profile.html"
+          >>
+          <img src="./styles/users-mypage-profile-change-icon.svg" />
+          <span>프로필 변경</span>
+        </a>
+      </section>
+
+      <section class="my-collections">
+        <div>
+          <h2>내가 찜한 콘텐츠</h2>
+          <p>4편</p>
+        </div>
+        <ul class="collection-list">
+          <li class="collection-item">
+            <div class="thumbnail-wrapper">
+              <img src="./assets/quiet-orbit.png" alt="고요의 궤도" />
+              <input type="checkbox" id="item-1" class="item-checkbox" />
+              <label for="item-1" class="checkbox-icon"></label>
+            </div>
+            <h3>고요의 궤도</h3>
+            <p>SF · 미스터리 · 15+</p>
+          </li>
+
+          <li class="collection-item">
+            <div class="thumbnail-wrapper">
+              <img src="./assets/blue-time.png" alt="마지막 승강장" />
+              <input type="checkbox" id="item-2" class="item-checkbox" />
+              <label for="item-2" class="checkbox-icon"></label>
+            </div>
+            <h3>파란 시간</h3>
+            <p>드라마 · 12+</p>
+          </li>
+
+          <li class="collection-item">
+            <div class="thumbnail-wrapper">
+              <img src="./assets/forest-letter.png" alt="숲에서 온 편지" />
+              <input type="checkbox" id="item-3" class="item-checkbox" />
+              <label for="item-3" class="checkbox-icon"></label>
+            </div>
+            <h3>숲에서 온 편지</h3>
+            <p>로맨스 · 드라마 · 12+</p>
+          </li>
+
+          <li class="collection-item">
+            <div class="thumbnail-wrapper">
+              <img src="./assets/night-driver.png" alt="밤의 잠수부" />
+              <input type="checkbox" id="item-4" class="item-checkbox" />
+              <label for="item-4" class="checkbox-icon"></label>
+            </div>
+            <h3>밤의 잠수부</h3>
+            <p>판타지 · 드라마 · 전체</p>
+          </li>
+        </ul>
+      </section>
+
       <section class="account-settings">
         <h2>계정 설정</h2>
 
