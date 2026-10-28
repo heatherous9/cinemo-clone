@@ -2,12 +2,6 @@
   --max-width: 1314px;
 }
 
-body {
-  background-color: #101113;
-  color: #f3f1ed;
-  font-family: "Noto Sans KR", sans-serif;
-}
-/* 헤더푸터 CSS시작 */
 .header {
   padding: 0 24px;
 }

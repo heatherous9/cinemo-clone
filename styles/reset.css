@@ -103,6 +103,9 @@ html {
 body {
   min-height: 100%;
   line-height: 1.5;
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: #101113;
+  color: #f3f1ed;
 }
 
 /* list */
