@@ -48,6 +48,7 @@ body {
   color: #f3f1ed;
   font-family: Noto Sans KR;
   font-size: 14px;
+  grid-template-columns: 1fr;
 }
 .main-mypage a {
   display: flex;
@@ -79,6 +80,8 @@ body {
 }
 #footer {
   font-family: Noto Sans KR;
+  margin-top: 40px;
+  margin-bottom: 40px;
   color: #acaeb3;
 }
 .profile-footer {
@@ -115,11 +118,23 @@ body {
   .header-head {
     width: 100%;
   }
+  .main-mypage {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    margin: 0;
+  }
+  .main-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
   .main-list ul {
     gap: 16px;
     font-size: 13px;
   }
   .mypages {
+    gap: 24px;
     font-size: 12px;
   }
   .mypageimg {
