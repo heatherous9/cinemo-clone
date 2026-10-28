@@ -206,7 +206,7 @@ body {
   gap: 24px;
 }
 
-.collections {
+.my-collections {
   width: 100%;
   padding: 16px 0 64px;
   background-color: #101113;
@@ -338,31 +338,31 @@ body {
   }
 }
 
-.collections .collection-group + .collection-group {
+.my-collections .collection-group + .collection-group {
   margin-top: 48px;
 }
 
-.collections .collection-heading {
+.my-collections .collection-heading {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  padding: 0 64px;
-  margin-bottom: 20px;
+  align-items: center;
+  margin-bottom: 24px;
 }
 
-.collections .collection-heading h2 {
+.my-collections .collection-heading h3 {
+  margin: 0;
   font-size: 24px;
   font-weight: 700;
   line-height: 1;
   color: #f3f1ed;
 }
 
-.collections .collection-heading p {
-  margin-top: 8px;
+.my-collections .collection-heading p {
+  margin: 0;
   font-size: 12px;
   font-weight: 400;
   line-height: 1;
-  color: #acaeb3;
+  color: #7e8289;
 }
 
 .collections .collection-heading span {
@@ -383,11 +383,24 @@ body {
   list-style: none;
 }
 
+.my-collections .collection-list {
+  display: flex;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .collections .collection-item {
   display: flex;
   flex-direction: column;
   width: 310px;
   flex-shrink: 0;
+}
+
+.my-collections .collection-item {
+  flex: 1;
+  min-width: 0;
 }
 
 .collections .collection-item img {
@@ -400,22 +413,47 @@ body {
   transition: opacity 0.3s;
 }
 
-.collections .collection-item h3 {
+.my-collections .thumbnail-wrapper img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.my-collections .collection-item h4 {
+  margin: 0 0 4px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
   color: #f3f1ed;
-  margin-bottom: 4px;
 }
 
-.collections .collection-item p {
+.my-collections .collection-item p {
+  margin: 0;
   font-size: 11px;
   font-weight: 400;
   line-height: 1;
   color: #acaeb3;
 }
 
-.collections .collection-item:hover > img {
+.my-collections .thumbnail-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 12px;
+}
+
+.my-collections .item-checkbox {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  margin: 0;
+}
+
+.my-collections .collection-item:hover > img {
   opacity: 0.5;
 }
 
