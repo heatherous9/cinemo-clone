@@ -87,6 +87,15 @@ body {
 .mypages p {
   flex-shrink: 0;
 }
+.my-pages {
+  color: #f28d77;
+  list-style: none;
+  font-family: Noto Sans KR;
+  font-size: 14px;
+}
+.my-pages p {
+  flex-shrink: 0;
+}
 
 #footer {
   font-family: Noto Sans KR;
@@ -97,10 +106,14 @@ body {
 }
 #footer-profile {
   display: flex;
+  justify-content: center;
   width: 100%;
-  font-family: Noto Sans KR;
+  font-family: "Noto Sans KR", sans-serif;
   padding: 40px 24px;
   color: #7e8289;
+}
+.footer-text {
+  text-align: center;
 }
 
 .footer-container {
@@ -142,9 +155,6 @@ body {
 
 @media (min-width: 320px) and (max-width: 767px) {
   .header {
-    display: grid;
-    gap: 16px;
-    margin-left: 24px;
   }
   .header-head {
     width: 100%;
