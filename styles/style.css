@@ -5,8 +5,9 @@
 body {
   background-color: #101113;
   color: #f3f1ed;
+  font-family: "Noto Sans KR", sans-serif;
 }
-
+/* 헤더푸터 CSS시작 */
 .header {
   padding: 0 24px;
 }
@@ -195,6 +196,7 @@ body {
     flex-direction: column;
   }
 }
+/* 헤더푸터 CSS끝 */
 
 body {
   background-color: #101113;
@@ -797,4 +799,52 @@ body {
 }
 .font-inter {
   font-family: "Inter", sans-serif;
+}
+
+/* section2 css시작 */
+.hero {
+  font-family: "Noto Sans KR;", Inter;
+}
+.week span:first-child {
+  color: #f28d77;
+  font-size: 12px;
+}
+.week span:last-child {
+  color: #acaeb3;
+  font-family: Inter;
+  font-size: 10px;
+}
+.hero-content h2 {
+  font-size: 64px;
+  color: #f3f1ed;
+  font-weight: bold;
+}
+.hero-content p {
+  color: #acaeb3;
+  font-size: 11px;
+}
+.hero-intro {
+  font-size: 12px;
+  color: #acaeb3;
+}
+.topic {
+  font-size: 16px;
+  color: #d2d3d5;
+}
+.one-tton {
+  color: #241512;
+  font-size: 14px;
+}
+.tow-tton {
+  font-size: 14px;
+  color: #f3f1ed;
+}
+.quiet-story span {
+  font-size: 14px;
+  color: #f3f1ed;
+}
+.quiet-story p {
+  font-size: 10px;
+  color: #acaeb3;
+  font-family: Inter;
 }
