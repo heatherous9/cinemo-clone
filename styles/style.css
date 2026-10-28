@@ -602,21 +602,31 @@ body {
   height: 100%;
   object-fit: contain;
 }
+.my-page-main {
+  padding: 56px 24px 64px;
+}
 .my-cinemo {
   margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-.my-cinemo .title {
+.my-cinemo .my-cinemo-eyebrow {
   margin: 0;
   color: #f28d78;
   font-size: 10px;
   font-weight: 400;
   text-transform: uppercase;
 }
-.my-cinemo .my-intro {
+.my-cinemo .my-cinemo-title {
   font-size: 32px;
   font-weight: 700;
   margin: 0 0 8px 0;
   line-height: 1.2;
+}
+.my-cinemo-description {
+  color: #acaeb3;
+  font-size: 15px;
 }
 .my-profile-box {
   background-color: #303237;
@@ -629,12 +639,13 @@ body {
 }
 
 .my-profile-avatar {
-  position: relative;
+  background: url("../assets/Avatar-yolo.png") center / contain no-repeat;
   width: 80px;
   height: 80px;
-  border-radius: 12px;
-  overflow: hidden;
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .my-profile-image {
   display: block;
@@ -642,18 +653,10 @@ body {
   height: 100%;
 }
 .my-profile-initial {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 28px;
-  font-weight: bold;
-  z-index: 2;
+  font-size: 43px;
   color: #f3f1ed;
 }
+
 .profile-avatar .profile-image {
   display: block;
   width: 100%;
@@ -674,6 +677,12 @@ body {
   gap: 10px;
   text-decoration: none;
 }
+.my-profile-box {
+  border-radius: 4px;
+  background-color: #1a1c1f;
+  gap: 28px;
+  display: flex;
+}
 .my-profile-box .profile-area {
   display: flex;
   flex-direction: column;
@@ -681,7 +690,49 @@ body {
   flex: 1;
   margin-left: 20px;
 }
+.profile-user-container {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.profile-user-name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #f3f1ed;
+}
+.profile-user-type {
+  font-size: 11px;
+  color: #f28d77;
+}
+.profile-user-note {
+  font-size: 13px;
+  color: #acaeb3;
+}
+.profile-user-status {
+  font-size: 11px;
+  color: #7e8289;
+}
+/* media쿼리에 width:100% 넣어야함. 자식svg display none되게*/
+.my-profile-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+/* 미디어쿼리 mobile에서는 디스플레이 block이 되어야 함 */
+.my-profile-btn-container .profile-user-status {
+  display: none;
+}
 
+.profile-change-btn {
+  display: flex;
+  gap: 8px;
+  height: 48px;
+  padding: 0 22px;
+  align-items: center;
+  border: 1px solid #303237;
+  border-radius: 4px;
+}
 .bt-profile-setting {
   display: block;
   margin-left: auto;
@@ -735,4 +786,7 @@ body {
 .btn-manage:hover {
   background-color: #1a1c1f;
   border-color: #acaeb3;
+}
+.font-inter {
+  font-family: "Inter", sans-serif;
 }
