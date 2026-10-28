@@ -336,10 +336,9 @@ body {
 
 .collections .collection-item {
   display: flex;
-  align-items: center;
-  margin-left: 64px;
-  font-size: 10px;
-  font-family: inter;
+  flex-direction: column;
+  width: 310px;
+  flex-shrink: 0;
 }
 
 .collections .collection-item img {
@@ -371,7 +370,7 @@ body {
   opacity: 0.5;
 }
 
-/*태블릿:768-1023*/
+/* 태블릿: 768~1023px */
 @media (max-width: 1023px) {
   .collections .collection-group + .collection-group {
     margin-top: 40px;
@@ -380,17 +379,17 @@ body {
   .collections .collection-heading h2 {
     font-size: 20px;
   }
-}
 
-.collections .collection-heading {
-  padding: 0 40px;
-  margin-bottom: 16px;
-}
+  .collections .collection-heading {
+    padding: 0 40px;
+    margin-bottom: 16px;
+  }
 
-.collections .collection-list {
-  padding: 0 40px 36px;
-  overflow-x: auto;
-  min-height: 100px;
+  .collections .collection-list {
+    padding: 0 40px 36px;
+    overflow-x: auto;
+    min-height: 250px;
+  }
 }
 
 /*모바일320-767*/
