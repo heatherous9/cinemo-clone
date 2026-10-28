@@ -248,6 +248,8 @@ body {
   padding: 0 64px;
   overflow-x: hidden;
   overflow-y: hidden;
+  scrollbar-color: #7e8289 #101113;
+  scrollbar-width: thin;
   list-style: none;
 }
 
@@ -290,6 +292,24 @@ body {
 
 /*태블릿:768-1023*/
 @media (max-width: 1023px) {
+  .collections .collection-group + .collection-group {
+    margin-top: 40px;
+  }
+
+  .collections .collection-heading h2 {
+    font-size: 20px;
+  }
+}
+
+.collections .collection-heading {
+  padding: 0 40px;
+  margin-bottom: 16px;
+}
+
+.collections .collection-list {
+  padding: 0 40px 36px;
+  overflow-x: auto;
+  min-height: 100px;
 }
 
 /*모바일320-767*/
@@ -304,7 +324,7 @@ body {
 
   .collections .collection-heading {
     padding: 0 24px;
-    margin-bottom: 8px;
+    margin-bottom: 18px;
   }
 
   .collections .collection-heading p {
@@ -312,12 +332,14 @@ body {
   }
 
   .collections .collection-list {
+    gap: 16px;
     padding: 0 24px 18px;
     overflow-x: auto;
   }
 
   .collections .collection-item {
     width: 240px;
+    margin-bottom: 18px;
   }
 
   .collections .collection-item img {
