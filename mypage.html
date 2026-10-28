@@ -7,75 +7,174 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cinemo - My Page</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <a href="/index.html" class="logo">
+        <img src="./assets/nerflex-identity.svg" alt="사이트로고" />
+      </a>
+      <div class="header-head">
+        <span>
+          <nav class="main-list">
+            <ul>
+              <li><a href="#">홈</a></li>
+              <li><a href="#">영화</a></li>
+              <li><a href="#">시리즈</a></li>
+              <li><a href="#">내가 찜한 콘텐츠</a></li>
+            </ul>
+          </nav>
+        </span>
+        <span>
+          <nav class="main-mypage">
+            <a href="/mypage.html" class="mypages">
+              <div class="pageimg">
+                <img src="./assets/avatar.png" alt="" class="mypageimg" />
+                <p>Y</p>
+              </div>
+              <p>욜로의 마이페이지</p>
+            </a>
+          </nav>
+        </span>
+      </div>
+    </header>
     <main>
-      <section>
+      <section class="my-cinemo">
         <h2 class="title">my cinemo</h2>
         <h3 class="intro">마이페이지</h3>
         <p class="description">취향을 모으고, 나만의 시간을 이어가세요.</p>
-        <div class="profile-box">
-          <div class="profile-avatar">
-            <img
-              src="./styles/Avatar-YOLO.png"
-              alt="서연 프로필"
-              class="profile-image"
-            />
-            <span class="avatar-initial">Y</span>
-          </div>
-          <div class="profile-area">
-            <span>욜로</span>
-            <span>기본 프로필</span>
-            <p>나만의 영화 노트</p>
-            <p>2026년 10월부터 함께하는 중</p>
-          </div>
-          <button>프로필 변경</button>
-        
+      </section>
+      <section class="my-profile-box">
+        <div class="my-profile-avatar">
+          <img
+            src="./styles/Avatar-YOLO.png"
+            alt="서연 프로필"
+            class="my-profile-image"
+          />
+          <span class="my-profile-initial">Y</span>
+        </div>
+
+        <div class="profile-area">
+          <span>욜로</span>
+          <span>기본 프로필</span>
+          <p>나만의 영화 노트</p>
+          <p>2026년 10월부터 함께하는 중</p>
+        </div>
+        <a href="profile.html"
+          >>
+          <img src="./styles/users-mypage-profile-change-icon.svg" />
+          <span>프로필 변경</span>
+        </a>
+      </section>
+
+      <section class="my-collections">
+        <div>
+          <h2>내가 찜한 콘텐츠</h2>
+          <p>4편</p>
+        </div>
+        <ul class="collection-list">
+          <li class="collection-item">
+            <div class="thumbnail-wrapper">
+              <img src="./assets/quiet-orbit.png" alt="고요의 궤도" />
+              <input type="checkbox" id="item-1" class="item-checkbox" />
+              <label for="item-1" class="checkbox-icon"></label>
+            </div>
+            <h3>고요의 궤도</h3>
+            <p>SF · 미스터리 · 15+</p>
+          </li>
+
+          <li class="collection-item">
+            <div class="thumbnail-wrapper">
+              <img src="./assets/blue-time.png" alt="마지막 승강장" />
+              <input type="checkbox" id="item-2" class="item-checkbox" />
+              <label for="item-2" class="checkbox-icon"></label>
+            </div>
+            <h3>파란 시간</h3>
+            <p>드라마 · 12+</p>
+          </li>
+
+          <li class="collection-item">
+            <div class="thumbnail-wrapper">
+              <img src="./assets/forest-letter.png" alt="숲에서 온 편지" />
+              <input type="checkbox" id="item-3" class="item-checkbox" />
+              <label for="item-3" class="checkbox-icon"></label>
+            </div>
+            <h3>숲에서 온 편지</h3>
+            <p>로맨스 · 드라마 · 12+</p>
+          </li>
+
+          <li class="collection-item">
+            <div class="thumbnail-wrapper">
+              <img src="./assets/night-driver.png" alt="밤의 잠수부" />
+              <input type="checkbox" id="item-4" class="item-checkbox" />
+              <label for="item-4" class="checkbox-icon"></label>
+            </div>
+            <h3>밤의 잠수부</h3>
+            <p>판타지 · 드라마 · 전체</p>
+          </li>
+        </ul>
+      </section>
+
       <section class="account-settings">
         <h2>계정 설정</h2>
 
-        <div class="settings-group">
-          <div class="settings-list">
-            <div class="account-setting-row">
-              <p>이메일</p>
-              <p>yolo202617@example.com</p>
-            </div>
-            <button>변경</button>
+        <div class="settings-list">
+          <div class="account-setting-row">
+            <p>이메일</p>
+            <p>yolo202617@example.com</p>
           </div>
+          <button>변경</button>
+        </div>
 
-          <div class="settings-list">
-            <div class="account-setting-row">
-              <p>비밀번호</p>
-              <p>••••••••••••</p>
-            </div>
-            <button>변경</button>
+        <div class="settings-list">
+          <div class="account-setting-row">
+            <p>비밀번호</p>
+            <p>••••••••••••</p>
           </div>
+          <button>변경</button>
+        </div>
 
-          <div class="settings-list">
-            <div class="account-setting-row">
-              <p>멤버십</p>
-              <p>베이식 · 월 9,500원</p>
-            </div>
-            <button>관리</button>
+        <div class="settings-list">
+          <div class="account-setting-row">
+            <p>멤버십</p>
+            <p>베이식 · 월 9,500원</p>
           </div>
+          <button>관리</button>
+        </div>
 
-          <div class="settings-list">
-            <div class="account-setting-row">
-              <p>표시 언어</p>
-              <p>한국어</p>
-            </div>
-            <button>변경</button>
+        <div class="settings-list">
+          <div class="account-setting-row">
+            <p>표시 언어</p>
+            <p>한국어</p>
           </div>
+          <button>변경</button>
         </div>
 
         <div class="session-actions">
           <p>내 계정으로 접속 중입니다.</p>
-          <button>로그아웃</button>
+          <a href="index.html">로그아웃</a>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer id="footer">
+      <nav class="footer-list">
+        <ul>
+          <li>서비스 소개</li>
+          <li>이용약관</li>
+          <li>개인정보 처리방침</li>
+          <li>고객센터</li>
+        </ul>
+      </nav>
+      <div class="footer-text">
+        <p>
+          CINEMO는 학습을 위한 가상의 OTT 서비스 입니다. 콘텐츠와 인물은 모두
+          허구이며 실제 결제·재생은 제공하지 않습니다.
+        </p>
+      </div>
+      <div class="footer-project">
+        <p>© 2026 CINEMO. A FICTIONAL STREAMING PROJECT.</p>
+      </div>
+    </footer>
   </body>
 </html>

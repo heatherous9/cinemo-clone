@@ -1,87 +1,76 @@
 <!doctype html>
-<html
-  lang="ko
-"
->
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cinemo - profile</title>
-
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
-    <header></header>
+    <header class="header">
+      <a href="/index.html" class="logo">
+        <img src="./assets/nerflex-identity.svg" alt="사이트로고" />
+      </a>
+    </header>
     <main>
-      <section class="profile-intro">
+      <section>
         <h2>YOUR OWN SCENE</h2>
-        <p class="profile-intro-p1">누구의 시간인가요?</p>
-        <p class="profile-intro-p2">
-          함께 보는 이야기, 취향은 각자의 방식으로.
-        </p>
+        <p>누구의 시간인가요?</p>
+        <p>함께 보는 이야기, 취향은 각자의 방식으로.</p>
       </section>
       <section class="profile-options">
         <ul class="profile-list">
           <li>
-            <div class="profile-avatar">
-              <img
-                src="./styles/Avatar-YOLO.png"
-                alt="욜로 프로필"
-                class="profile-image"
-              />
-              <span class="avartar-initial">Y</span>
-            </div>
-
-            <span class="profile-name">욜로</span>
-            <span class="profile-note">나만의 영화 노트</span>
+            <a href="/index.html" class="profile-link">
+              <div class="profile-card">
+                <img src="/assets/Avatar-yolo.png" alt="욜로 프로필" />
+                <span class="profile-initial">Y</span>
+              </div>
+              <div>
+                <span class="profile-name">욜로</span>
+                <span class="profile-description">나만의 영화 노트</span>
+              </div>
+            </a>
           </li>
           <li>
-            <div class="profile-avatar">
-              <img
-                src="./styles/Avatar-jiho.png"
-                alt="지호 프로필"
-                class="profile-image"
-              />
-              <span class="avartar-initial">J</span>
-            </div>
-
-            <span class="profile-name">지호</span>
-            <span class="profile-note">새로운 장면을 찾아서</span>
+            <a href="/index.html" class="profile-link">
+              <div class="profile-card">
+                <img src="/assets/Avata-jiho.png" />
+                <span class="profile-initial">J</span>
+              </div>
+              <div>
+                <span class="profile-name">지호</span>
+                <span class="profile-description">새로운 장면을 찾아서</span>
+              </div>
+            </a>
           </li>
           <li>
-            <div class="profile-avatar">
-              <img
-                src="./styles/Avatar-min.png"
-                alt="민 프로필"
-                class="profile-image"
-              />
-
-              <span class="avartar-initial">M</span>
-            </div>
-
-            <span class="profile-name">민</span>
-            <span class="profile-note">오늘도 한 편</span>
+            <a href="/index.html" class="profile-link">
+              <div class="profile-card">
+                <img src="/assets/Avatar-min.png" />
+                <span class="profile-initial">M</span>
+              </div>
+              <div>
+                <span class="profile-name">민</span>
+                <span class="profile-description">오늘도 한 편</span>
+              </div>
+            </a>
           </li>
           <li>
-            <div class="profile-avatar">
-              <img
-                src="./styles/Avatar-guest.png"
-                alt="게스트 프로필"
-                class="profile-image"
-              />
-
-              <span class="avartar-initial">G</span>
-            </div>
-
-            <span class="profile-name">게스트</span>
-            <span class="profile-note">가볍게 둘러보기</span>
+            <a href="/index.html" class="profile-link">
+              <div class="profile-card">
+                <img src="/assets/Avatar-guest.png" />
+                <span class="profile-initial">G</span>
+              </div>
+              <div>
+                <span class="profile-name">게스트</span>
+                <span class="profile-description">가볍게 둘러보기</span>
+              </div>
+            </a>
           </li>
         </ul>
-        <button class="bt-profile-setting" type="button">
-          <img src="styles/Vector-PENCIL.png" alt="" class="bt-icon" />
-          <span>프로필 관리</span>
-        </button>
+        <a href="/mypage.html">프로필관리</a>
       </section>
     </main>
     <footer></footer>
