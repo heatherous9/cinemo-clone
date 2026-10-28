@@ -48,9 +48,9 @@
   display: flex;
   gap: 24px;
   padding: 0 64px;
-  overflow-x: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
   list-style: none;
-  scrollbar-width: none;
 }
 
 .collections .collection-item {
@@ -85,28 +85,15 @@
   color: #acaeb3;
 }
 
-.collections .collection-item h3 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1;
-  color: #f3f1ed;
-  margin-bottom: 4px;
-}
-
-.collections .collection-item p {
-  font-size: 11px;
-  font-weight: 400;
-  line-height: 1;
-  color: #acaeb3;
-}
-
 .collections .collection-item:hover > img {
   opacity: 0.5;
 }
 
+/*태블릿:768-1023*/
 @media (max-width: 1023px) {
 }
 
+/*모바일320-767*/
 @media (max-width: 767px) {
   .collections {
     padding: 8px 0 40px;
@@ -126,7 +113,8 @@
   }
 
   .collections .collection-list {
-    padding: 0 24px;
+    padding: 0 24px 18px;
+    overflow-x: auto;
   }
 
   .collections .collection-item {
@@ -138,6 +126,7 @@
     height: 135px;
   }
 }
+
 body {
   background-color: #101113;
   color: #f3f1ed;
