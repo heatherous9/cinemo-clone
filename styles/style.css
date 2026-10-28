@@ -385,11 +385,60 @@ body {
   font-weight: 400;
   line-height: 180%;
 }
+.profile-card {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.profile-initial {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  font-weight: 500;
+  color: #f3f1ed;
+  z-index: 1;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #f3f1ed;
+  margin-top: 12px;
+}
+.profile-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: #f3f1ed;
+  margin-top: 4px;
+}
+.profile-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+.profile-link > div:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
 .profile-list {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 16px;
+  justify-items: center;
 }
 .profile-list li {
   display: flex;
