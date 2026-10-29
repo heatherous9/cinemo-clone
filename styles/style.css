@@ -624,7 +624,8 @@ body {
   text-align: center;
   width: 100%;
   max-width: 1314px;
-  min-height: 710x;
+  min-height: 710px;
+  margin: 0 auto;
   justify-content: center;
   height: calc(100vh - 230px);
 }
