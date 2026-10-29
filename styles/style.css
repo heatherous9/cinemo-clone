@@ -1074,7 +1074,7 @@ body {
   color: #acaeb3;
 }
 
-/* 마이페지이체크박스*/
+/* 마이페이지체크박스*/
 
 .my-collections .item-checkbox {
   display: none;
@@ -1226,7 +1226,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
 
-  padding: 104px 64px 72px 64px;
+  padding: 104px 64px 72px 24px;
 
   margin: 0 auto;
   background-color: #101113;
@@ -1242,10 +1242,10 @@ body {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    180deg,
-    rgba(16, 17, 19, 0) 0%,
-    rgba(16, 17, 19, 0.65) 50%,
-    rgba(16, 17, 19, 0.96) 100%
+    90deg,
+    rgba(16, 17, 19, 0.960784) 0%,
+    rgba(16, 17, 19, 0.658824) 45%,
+    rgba(16, 17, 19, 0) 100%
   );
   z-index: 1;
   pointer-events: none;
@@ -1348,7 +1348,7 @@ body {
 .main-quiet-story {
   position: absolute;
   right: 120px;
-  bottom: 72px;
+  bottom: 24px;
   text-align: right;
 }
 .main-quiet-story span {
