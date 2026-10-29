@@ -755,6 +755,38 @@ body {
   height: 100%;
   object-fit: contain;
 }
+/* 프로필페이지 미디어쿼리 추가 */
+
+@media screen and (max-width: 768px) {
+  .profile-container {
+    height: auto;
+    min-height: auto;
+    padding: 40px 20px;
+  }
+
+  .profile-title {
+    font-size: 28px;
+    line-height: 36px;
+    height: auto;
+  }
+  .profile-container > .profilie-description {
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+
+  .profile-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+  profile-card {
+    width: 120px;
+    height: 120px;
+  }
+  .profile-initial {
+    font-size: 48px;
+  }
+}
+/* my-page css 시작 */
 .my-page-main {
   max-width: 1440px;
   display: flex;
