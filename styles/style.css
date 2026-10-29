@@ -489,14 +489,13 @@ body {
   }
 
   .collections .collection-heading {
-    padding: 0 40px;
     margin-bottom: 16px;
   }
 
   .collections .collection-list {
-    padding: 0 40px 36px;
+    padding: 0 0px 36px;
     overflow-x: auto;
-    min-height: 250px;
+    min-height: auto;
     scrollbar-width: thin;
     scrollbar-color: #7e8289 #232529;
   }
@@ -526,6 +525,7 @@ body {
 
   .collections .collection-list {
     gap: 16px;
+    min-height: auto;
     padding: 0 18px;
     overflow-x: auto;
   }
@@ -1242,6 +1242,7 @@ body {
   box-sizing: border-box;
 
   width: 100%;
+  padding: 0 24px;
   background-color: #101113;
 
   background-image: url(../assets/main-banner.jpg);
@@ -1391,7 +1392,7 @@ body {
 @media (min-width: 768px) and (max-width: 1023px) {
   .main-hero {
     max-width: 100%;
-    padding: 40px 40px;
+    padding: 40px 24px;
     min-height: 560px;
   }
 
@@ -1415,8 +1416,8 @@ body {
     justify-content: flex-end;
     padding-top: 8px;
     padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   .main-hero::after {
@@ -1431,15 +1432,6 @@ body {
     );
     z-index: 1;
     pointer-events: none;
-  }
-
-  .main-week,
-  .main-hero-content,
-  .main-hero-intro,
-  .main-topic,
-  .main-btns {
-    padding-left: 20px;
-    padding-right: 20px;
   }
 
   .main-week {
