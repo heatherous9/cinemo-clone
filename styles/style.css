@@ -1373,9 +1373,6 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .main-quiet-story {
-  position: absolute;
-  right: 120px;
-  bottom: 24px;
   text-align: right;
 }
 .main-quiet-story span {
