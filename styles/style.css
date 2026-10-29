@@ -364,7 +364,7 @@ body {
 
 .collections {
   width: 100%;
-  max-width: 100%;
+  max-width: var(--max-width);
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -494,6 +494,7 @@ body {
   }
 
   .collections .collection-list {
+    grid-template-columns: repeat(2, 1fr);
     padding: 0 40px 36px;
     overflow-x: auto;
     min-height: 250px;
@@ -520,8 +521,9 @@ body {
   }
 
   .collections .collection-list {
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-    padding: 0 24px 18px;
+    padding: 0 18px;
     overflow-x: auto;
   }
 
@@ -1129,10 +1131,6 @@ body {
 /* 마이페이지모바일 */
 
 @media (max-width: 767px) {
-  .my-collections {
-    max-width: 342px;
-  }
-
   .my-collections > div {
     height: 24px;
     margin-bottom: 24px;
@@ -1151,14 +1149,14 @@ body {
   }
 
   .my-collections .collection-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
     column-gap: 16px;
     row-gap: 24px;
   }
 
   .my-collections .collection-item {
-    width: 163px;
   }
 
   .my-collections .thumbnail-wrapper {
@@ -1166,8 +1164,9 @@ body {
   }
 
   .my-collections .collection-item img {
-    width: 163px;
+    /* width: 163px;
     height: 92px;
+     */
     border-radius: 4px;
   }
 }
@@ -1178,7 +1177,8 @@ body {
   }
 
   .my-collections .collection-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     flex-wrap: wrap;
     gap: 24px 16px;
   }
