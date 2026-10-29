@@ -544,6 +544,7 @@ body {
   font-weight: 400;
   font-style: Regular;
   font-size: 11px;
+  leading-trim: NONE;
 
   color: #f28d77;
 }
@@ -558,6 +559,7 @@ body {
   font-weight: 400;
   font-style: Regular;
   font-size: 15px;
+  leading-trim: NONE;
   line-height: 170%;
   letter-spacing: 0%;
 }
@@ -924,7 +926,6 @@ body {
 
 .my-collections {
   width: 100%;
-  max-width: 1312px;
   margin: 48px auto;
 }
 
@@ -1001,7 +1002,7 @@ body {
 .my-collections .checkbox-icon {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
