@@ -904,6 +904,7 @@ body {
   font-size: 13px;
   color: #acaeb3;
 }
+
 .profile-user-status {
   font-size: 11px;
   color: #7e8289;
@@ -928,12 +929,52 @@ body {
   align-items: center;
   border: 1px solid #303237;
   border-radius: 4px;
+  cursor: pointer;
 }
 .bt-profile-setting {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+/* 미디어쿼리 */
+@media screen and (max-width: 768px) {
+  .my-profile-box {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 24px;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .my-profile-box .profile-area {
+    margin-left: 0;
+    gap: 8px;
+  }
+  .profile-area .profile-user-status {
+    display: none;
+  }
+  .my-profile-btn-container .profile-user-status {
+    display: block;
+  }
+
+  .my-profile-btn-container {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .profile-change-btn {
+    width: auto;
+  }
+  .my-profile-btn-container svg {
+    display: none;
+  }
+}
+
 body {
   background-color: #101113;
   color: #f3f1ed;
@@ -1177,7 +1218,7 @@ body {
 }
 /* section2 css시작 */
 .main-hero {
-  font-family: "Noto Sans KR;", Inter, sans-serif;
+  font-family: "Noto Sans KR", Inter, sans-serif;
   position: relative;
   box-sizing: border-box;
 
@@ -1306,7 +1347,7 @@ body {
 }
 .main-quiet-story {
   position: absolute;
-  right: 64px;
+  right: 120px;
   bottom: 72px;
   text-align: right;
 }
