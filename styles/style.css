@@ -494,10 +494,11 @@ body {
   }
 
   .collections .collection-list {
-    grid-template-columns: repeat(2, 1fr);
     padding: 0 40px 36px;
     overflow-x: auto;
     min-height: 250px;
+    scrollbar-width: thin;
+    scrollbar-color: #7e8289 #232529;
   }
 }
 
@@ -521,7 +522,6 @@ body {
   }
 
   .collections .collection-list {
-    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     padding: 0 18px;
     overflow-x: auto;
@@ -597,16 +597,17 @@ body {
 }
 .profile-card {
   position: relative;
-  width: 152px;
-  height: 152px;
+  max-width: 152px;
+  width: 100%;
+
   border-radius: 8px;
-  background: #7b8c75;
   isolation: isolate;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 0px;
+  aspect-ratio: 1/1;
 }
 
 .profile-initial {
@@ -771,7 +772,7 @@ body {
   .profile-container {
     height: auto;
     min-height: auto;
-    padding: 40px 20px;
+    padding: 40px 16px;
   }
 
   .profile-title {
@@ -801,7 +802,7 @@ body {
 }
 /* my-page css 시작 */
 .my-page-main {
-  max-width: 1440px;
+  max-width: 1362px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
