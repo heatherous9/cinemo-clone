@@ -1,7 +1,7 @@
 :root {
   --max-width: 1314px;
 }
-
+/* 헤더푸터 */
 .header {
   padding: 0 24px;
 }
@@ -313,7 +313,7 @@ body {
 .session-actions a:hover {
   opacity: 0.5;
 }
-
+/* seiing - list */
 @media (min-width: 768px) and (max-width: 1023px) {
   .settings-list {
     gap: 16px;
@@ -544,7 +544,6 @@ body {
   font-weight: 400;
   font-style: Regular;
   font-size: 11px;
-  leading-trim: NONE;
 
   color: #f28d77;
 }
@@ -559,7 +558,6 @@ body {
   font-weight: 400;
   font-style: Regular;
   font-size: 15px;
-  leading-trim: NONE;
   line-height: 170%;
   letter-spacing: 0%;
 }
@@ -1165,7 +1163,7 @@ body {
 .font-inter {
   font-family: "Inter", sans-serif;
 }
-@mdeia (max-width: 768px) {
+@media (max-width: 768px) {
 }
 /* section2 css시작 */
 .main-hero {
