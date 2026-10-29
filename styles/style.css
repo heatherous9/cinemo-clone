@@ -363,11 +363,13 @@ body {
 }
 
 .collections {
-  max-width: 1440px;
+  width: 100%;
+  max-width: var(--max-width); /* 헤더와 동일한 최대 너비(1314px) 적용 */
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  padding: 56px 24px 64px;
+  padding: 56px 24px 64px; /* 헤더의 .header와 동일한 좌우 24px 패딩 */
+  box-sizing: border-box;
 }
 
 .collections .collection-group + .collection-group {
@@ -379,6 +381,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .collections .collection-heading h3 {
@@ -407,12 +410,14 @@ body {
 .collections .collection-list {
   display: flex;
   gap: 24px;
-  overflow-x: auto;
+  overflow-x: hidden;
   overflow-y: hidden;
   scrollbar-color: #7e8289 #101113;
   scrollbar-width: thin;
   margin: 0;
+  padding: 0;
   list-style: none;
+  width: 100%;
 }
 
 .collections .collection-item {
@@ -1004,18 +1009,21 @@ body {
 }
 
 .my-collections {
+  width: 100%;
   max-width: 1440px;
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  margin-bottom: 80px;
+  margin: 0 auto 80px;
+  box-sizing: border-box;
 }
 
 .my-collections > div {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .my-collections > div h3 {
@@ -1035,13 +1043,20 @@ body {
 .my-collections .collection-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
   list-style: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .my-collections .collection-item {
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
   flex-shrink: 0;
 }
 
@@ -1052,8 +1067,9 @@ body {
 
 .my-collections .collection-item img {
   display: block;
-  width: 310px;
-  height: 174px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 4px;
 }
@@ -1064,7 +1080,7 @@ body {
   font-weight: 500;
   line-height: 1;
   color: #f3f1ed;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
 }
 
 .my-collections .collection-item p {
@@ -1083,7 +1099,7 @@ body {
 .my-collections .checkbox-icon {
   position: absolute;
   top: 10px;
-  right: 50px;
+  right: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
