@@ -149,34 +149,53 @@
 }
 
 @media (max-width: 767px) {
+  .header {
+    padding: 24px;
+  }
+  .header-inner-container {
+    position: relative;
+    display: flex;
+    align-self: flex-start;
+    height: auto;
+    gap: 56px;
+    width: 100%;
+    max-width: var(--max-width);
+  }
   .header-head {
-    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
   }
   .main-list ul {
-    gap: 16px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
     font-size: 13px;
+    gap: 24px;
+    width: 100%;
   }
-  .mypages {
-    font-size: 12px;
-  }
-  .mypageimg {
-    width: 32px;
-    height: 32px;
-    position: relative;
-  }
-  .mypageimg + p {
-    font-size: 12px;
-    top: 50%;
-    left: 50%;
+  .main-mypage {
     position: absolute;
-    transform: translate(-50%, -50%);
+    top: 0;
+    right: 0;
   }
   .mypages > p {
     display: none;
   }
+  .my-pages > p {
+    display: none;
+  }
+
   #footer {
-    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
     font-size: 12px;
+  }
+  .footer-container {
+    width: 100%;
+    min-width: 0;
   }
   .footer-list ul {
     flex-wrap: wrap;
@@ -185,6 +204,7 @@
   }
   .footer-container p span {
     font-size: 11px;
+    display: block;
   }
 }
 /* 헤더푸터 CSS끝 */
