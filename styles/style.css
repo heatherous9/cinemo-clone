@@ -963,8 +963,11 @@ body {
 }
 
 .my-collections {
-  width: 100%;
-  margin: 48px auto;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 80px;
 }
 
 .my-collections > div {
@@ -989,16 +992,15 @@ body {
 }
 
 .my-collections .collection-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   list-style: none;
 }
 
 .my-collections .collection-item {
   display: flex;
   flex-direction: column;
-  width: 310px;
+  width: 100%;
   flex-shrink: 0;
 }
 
@@ -1040,7 +1042,7 @@ body {
 .my-collections .checkbox-icon {
   position: absolute;
   top: 10px;
-  right: 30px;
+  right: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
