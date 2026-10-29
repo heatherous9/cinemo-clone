@@ -364,7 +364,7 @@ body {
 
 .collections {
   width: 100%;
-  max-width: 1362;
+  max-width: 1362px;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
