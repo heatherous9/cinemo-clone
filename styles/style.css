@@ -162,7 +162,6 @@ body {
 
 .collections {
   width: 100%;
-  padding: 16px 0 64px;
   background-color: #101113;
   color: #f3f1ed;
   font-family: "Noto Sans KR", sans-serif;
@@ -185,7 +184,6 @@ body {
   flex-direction: row;
   align-items: center;
   gap: 24px;
-  padding: 24px 0;
   border-bottom: 1px solid #303237;
 }
 
@@ -297,7 +295,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0 64px;
   margin-bottom: 20px;
 }
 
@@ -326,8 +323,7 @@ body {
 .collections .collection-list {
   display: flex;
   gap: 24px;
-  padding: 0 64px;
-  overflow-x: hidden;
+  overflow-x: auto;
   overflow-y: hidden;
   scrollbar-color: #7e8289 #101113;
   scrollbar-width: thin;
@@ -370,7 +366,7 @@ body {
   opacity: 0.5;
 }
 
-/* 태블릿: 768~1023px */
+/* 태블릿*/
 @media (max-width: 1023px) {
   .collections .collection-group + .collection-group {
     margin-top: 40px;
@@ -392,7 +388,7 @@ body {
   }
 }
 
-/*모바일320-767*/
+/*모바일*/
 @media (max-width: 767px) {
   .collections {
     padding: 8px 0 40px;
@@ -646,4 +642,176 @@ body {
   width: 16px;
   height: 16px;
   object-fit: contain;
+}
+
+.my-collections {
+  width: 100%;
+  max-width: 1312px;
+  margin: 48px auto;
+}
+
+.my-collections > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.my-collections > div h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #f3f1ed;
+}
+
+.my-collections > div p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: #7e8289;
+}
+
+.my-collections .collection-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  list-style: none;
+}
+
+.my-collections .collection-item {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  flex-shrink: 0;
+}
+
+.my-collections .thumbnail-wrapper {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.my-collections .collection-item img {
+  display: block;
+  width: 310px;
+  height: 174px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.my-collections .collection-item h3,
+.my-collections .collection-item h4 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #f3f1ed;
+  margin-bottom: 4px;
+}
+
+.my-collections .collection-item p {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+  color: #acaeb3;
+}
+
+/* 마이페지이체크박스*/
+
+.my-collections .item-checkbox {
+  display: none;
+}
+
+.my-collections .checkbox-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background-color: #101113;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.my-collections .checkbox-icon::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../assets/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.my-collections .item-checkbox:not(:checked) + .checkbox-icon::after {
+  display: none;
+}
+/* 마이페이지모바일 */
+
+@media (max-width: 767px) {
+  .my-collections {
+    max-width: 342px;
+  }
+
+  .my-collections > div {
+    height: 24px;
+    margin-bottom: 24px;
+  }
+
+  .my-collections > div h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #f3f1ed;
+  }
+
+  .my-collections > div p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #7e8289;
+  }
+
+  .my-collections .collection-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    row-gap: 24px;
+  }
+
+  .my-collections .collection-item {
+    width: 163px;
+  }
+
+  .my-collections .thumbnail-wrapper {
+    margin-bottom: 12px;
+  }
+
+  .my-collections .collection-item img {
+    width: 163px;
+    height: 92px;
+    border-radius: 4px;
+  }
+}
+/* 태블릿*/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .my-collections {
+    width: 100%;
+  }
+
+  .my-collections .collection-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px 16px;
+  }
+
+  .my-collections .collection-item {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .my-collections .collection-item img {
+    width: 100%;
+    height: auto;
+  }
 }
