@@ -1,7 +1,7 @@
 :root {
   --max-width: 1314px;
 }
-
+/* 해더 푸터 CSS시작 */
 .header {
   padding: 0 24px;
 }
@@ -205,6 +205,11 @@
   .footer-container p span {
     font-size: 11px;
     display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .mypages > p {
+    display: none;
   }
 }
 /* 헤더푸터 CSS끝 */
