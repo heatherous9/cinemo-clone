@@ -1,0 +1,136 @@
+.collections {
+  width: 100%;
+  padding: 16px 0 64px;
+  background-color: #101113;
+  color: #f3f1ed;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.collections .collection-group + .collection-group {
+  margin-top: 48px;
+}
+
+.collections .collection-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 64px;
+  margin-bottom: 20px;
+}
+
+.collections .collection-heading h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  color: #f3f1ed;
+}
+
+.collections .collection-heading p {
+  margin-top: 8px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: #acaeb3;
+}
+
+.collections .collection-heading span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1;
+  color: #7e8289;
+}
+
+.collections .collection-list {
+  display: flex;
+  gap: 24px;
+  padding: 0 64px;
+  overflow-x: auto;
+  list-style: none;
+  scrollbar-width: none;
+}
+
+.collections .collection-item {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  flex-shrink: 0;
+}
+
+.collections .collection-item img {
+  display: block;
+  width: 310px;
+  height: 174px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+  transition: opacity 0.3s;
+}
+
+.collections .collection-item h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #f3f1ed;
+  margin-bottom: 4px;
+}
+
+.collections .collection-item p {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+  color: #acaeb3;
+}
+
+.collections .collection-item h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  color: #f3f1ed;
+  margin-bottom: 4px;
+}
+
+.collections .collection-item p {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+  color: #acaeb3;
+}
+
+.collections .collection-item:hover > img {
+  opacity: 0.5;
+}
+
+@media (max-width: 1023px) {
+}
+
+@media (max-width: 767px) {
+  .collections {
+    padding: 8px 0 40px;
+  }
+
+  .collections .collection-group + .collection-group {
+    margin-top: 36px;
+  }
+
+  .collections .collection-heading {
+    padding: 0 24px;
+    margin-bottom: 8px;
+  }
+
+  .collections .collection-heading p {
+    margin-top: 8px;
+  }
+
+  .collections .collection-list {
+    padding: 0 24px;
+  }
+
+  .collections .collection-item {
+    width: 240px;
+  }
+
+  .collections .collection-item img {
+    width: 240px;
+    height: 135px;
+  }
+}
