@@ -78,11 +78,11 @@ Git과 GitHub를 활용한 협업 및 버전 관리 경험 습득
 
 메인 페이지
 
-[메인 페이지 이미지 삽입]
+<하단에 이미지 삽입>
 
 모바일 반응형 페이지
 
-[모바일 화면 이미지 삽입]
+<하단에 이미지 삽입>
 
 <br>
 
@@ -136,3 +136,19 @@ index.html 파일을 브라우저에서 실행합니다.
 GitHub
 GitHub - heatherous9/cinemo-clone: TEAM PROJECT 1
 TEAM PROJECT 1. Contribute to heatherous9/cinemo-clone development by creating an account on GitHub.
+
+<br>
+
+[ 메인페이지 이미지 ]
+<img src="./assets/pc-1.webp">
+<img src="./assets/pc-2.webp">
+<img src="./assets/pc-3.webp">
+<img src="./assets/pc-4.webp">
+<img src="./assets/pc-5.webp">
+
+[ 모바일페이지 이미지 ]
+<img src="./assets/mobile-1.webp">
+<img src="./assets/mobile-2.webp">
+<img src="./assets/mobile-3.webp">
+<img src="./assets/mobile-4.webp">
+<img src="./assets/mobile-5.webp">
